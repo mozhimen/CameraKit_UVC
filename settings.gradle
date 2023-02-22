@@ -1,6 +1,27 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url "https://repo.eclipse.org/content/repositories/paho-snapshots/" }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/grails-core' }
+        //maven { url 'http://raw.github.com/saki4510t/libcommon/master/repository/' }
+        maven { url 'https://raw.githubusercontent.com/saki4510t/libcommon/master/repository/' }
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        google()
+        flatDir {
+            dirs '../repositories'
+        }
+    }
+}
+
 include ':app'
-include ':camerakit'
-include ':camera'
+include ':camerak_uvc'
+include ':camerak'
 include ':imageutil'
-include ':libuvccamera'
+include ':camerak_uvc_base'
 rootProject.name='cameralib'

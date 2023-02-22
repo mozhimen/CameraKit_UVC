@@ -1,23 +1,10 @@
 ext {
-    plugins = [
-            library    : 'com.android.library',
-            application: 'com.android.application',
-    ]
-
     android = [
-            applicationId    : "com.stevez.camera.sample",
-            compileSdkVersion: 29,
-
-            minSdkVersion    : 18,
-            targetSdkVersion : 29,
-    ]
-
-    dependVersion = [
-            supportLibraryVersion: '30.0.0',
-    ]
-
-    dependencies = [
-
-            "gson"                        : "com.google.code.gson:gson:2.8.4",
+            compileSdk   : 33,
+            applicationId: "com.mozhimen.camerakuvc",
+            minSdk       : 18,
+            targetSdk    : 33,
+            versionCode  : 1,
+            versionName  : "1.0.0",
     ]
 }

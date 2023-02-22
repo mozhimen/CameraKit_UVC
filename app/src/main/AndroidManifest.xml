@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.stevez.camera.sample">
+    package="com.mozhimen.camerakuvctest">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -17,33 +17,34 @@
         <activity
             android:name=".HomeActivity"
             android:configChanges="keyboard|navigation|keyboardHidden|orientation|screenSize"
-            android:launchMode="singleTop">
+            android:launchMode="singleTop"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ConfigActivity"
+        <activity android:name=".ConfigActivity" android:exported="false"
             android:configChanges="keyboard|navigation|keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".BinocularGLSurfaceActivity"
+        <activity android:name=".BinocularGLSurfaceActivity" android:exported="false"
             android:configChanges="keyboard|navigation|keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".BinocularTextureViewActivity"
+        <activity android:name=".BinocularTextureViewActivity" android:exported="false"
             android:configChanges="keyboard|navigation|keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".CameraGLSurfaceActivity"
+        <activity android:name=".CameraGLSurfaceActivity" android:exported="false"
             android:configChanges="keyboard|navigation|keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".CameraTextureViewActivity"
+        <activity android:name=".CameraTextureViewActivity" android:exported="false"
             android:configChanges="keyboard|navigation|keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".ScaleGLSurfaceActivity"
+        <activity android:name=".ScaleGLSurfaceActivity" android:exported="false"
             android:configChanges="keyboard|navigation|keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".ScaleTextureViewActivity"
+        <activity android:name=".ScaleTextureViewActivity" android:exported="false"
             android:configChanges="keyboard|navigation|keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".Camera1Activity"
+        <activity android:name=".Camera1Activity" android:exported="false"
             android:configChanges="keyboard|navigation|keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".Camera2Activity"
+        <activity android:name=".Camera2Activity" android:exported="false"
             android:configChanges="keyboard|navigation|keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".CameraUvcActivity"
+        <activity android:name=".CameraUvcActivity" android:exported="false"
             android:configChanges="keyboard|navigation|keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".TwoCameraScaleTextureViewActivity"
+        <activity android:name=".TwoCameraScaleTextureViewActivity" android:exported="false"
             android:configChanges="keyboard|navigation|keyboardHidden|orientation|screenSize"/>
 
     </application>

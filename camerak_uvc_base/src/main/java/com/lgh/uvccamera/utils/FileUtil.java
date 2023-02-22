@@ -37,7 +37,6 @@ public class FileUtil {
      * 获取SD卡目录
      *
      * @param foderName
-     * @param fileName
      * @return
      */
     public static File getSDCardDir(String foderName) {

@@ -1,4 +1,18 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.mozhimen'
+                artifactId = 'camerak_uvc'
+                version = '1.0.0'
+            }
+        }
+    }
+}
 
 android {
     compileSdk rootProject.android.compileSdk

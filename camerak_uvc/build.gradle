@@ -6,7 +6,7 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.mozhimen'
+                groupId = 'com.mozhimen.camerak_uvc'
                 artifactId = 'camerak_uvc'
                 version = '1.0.0'
             }

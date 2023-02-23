@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.SurfaceTexture;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
@@ -13,18 +14,17 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatSpinner;
 
-import com.blankj.utilcode.util.LogUtils;
-import com.stevez.camera.CallBackEvents;
-import com.stevez.camera.CameraApiType;
-import com.stevez.camera.CameraFacing;
-import com.stevez.camera.CameraManager;
-import com.stevez.camera.CameraPreviewCallback;
-import com.stevez.camera.CameraSize;
-import com.stevez.camera.FacingType;
-import com.stevez.camera.IAttributes;
+import com.mozhimen.camerak.CallBackEvents;
+import com.mozhimen.camerak.CameraApiType;
+import com.mozhimen.camerak.CameraFacing;
+import com.mozhimen.camerak.CameraManager;
+import com.mozhimen.camerak.CameraPreviewCallback;
+import com.mozhimen.camerak.CameraSize;
+import com.mozhimen.camerak.FacingType;
+import com.mozhimen.camerak.IAttributes;
+import com.mozhimen.camerak_uvc.GLSurfaceViewListener;
+import com.mozhimen.camerak_uvc.ScaleGLSurfaceView;
 import com.mozhimen.camerakuvctest.R;
-import com.stevez.camerakit.GLSurfaceViewListener;
-import com.stevez.camerakit.ScaleGLSurfaceView;
 
 /**
  * @author: Zhu Yuliang
@@ -102,7 +102,7 @@ public class ScaleGLSurfaceActivity extends AppCompatActivity {
                 (new CallBackEvents() {
                     @Override
                     public void onCameraOpen(IAttributes cameraAttributes) {
-                        LogUtils.e(TAG, "onCameraOpen");
+                        Log.e(TAG, "onCameraOpen");
                         mInstance.setPhotoSize(new CameraSize(ConstantsConfig.getInstance().getWidth(), ConstantsConfig.getInstance().getHeight()));
                         mInstance.setPreviewSize(new CameraSize(ConstantsConfig.getInstance().getWidth(), ConstantsConfig.getInstance().getHeight()));
                         mInstance.setPreviewOrientation(ConstantsConfig.getInstance().getFaceOri().getValue() * 90);
@@ -110,7 +110,7 @@ public class ScaleGLSurfaceActivity extends AppCompatActivity {
                         mInstance.addPreviewCallbackWithBuffer(new CameraPreviewCallback() {
                             @Override
                             public void onCallBackPreview(byte[] data) {
-                                LogUtils.e(TAG, "onCallBackPreview");
+                                Log.e(TAG, "onCallBackPreview");
                             }
                         });
                         mInstance.startPreview(surface);
@@ -118,27 +118,27 @@ public class ScaleGLSurfaceActivity extends AppCompatActivity {
 
                     @Override
                     public void onCameraClose() {
-                        LogUtils.e(TAG, "onCameraClose");
+                        Log.e(TAG, "onCameraClose");
                     }
 
                     @Override
                     public void onCameraError(String errorMsg) {
-                        LogUtils.e(TAG, "onCameraError");
+                        Log.e(TAG, "onCameraError");
                     }
 
                     @Override
                     public void onPreviewStarted() {
-                        LogUtils.e(TAG, "onPreviewStarted");
+                        Log.e(TAG, "onPreviewStarted");
                     }
 
                     @Override
                     public void onPreviewStopped() {
-                        LogUtils.e(TAG, "onPreviewStopped");
+                        Log.e(TAG, "onPreviewStopped");
                     }
 
                     @Override
                     public void onPreviewError(String errorMsg) {
-                        LogUtils.e(TAG, "onPreviewError");
+                        Log.e(TAG, "onPreviewError");
                     }
                 }));
         mInstance.openCamera();

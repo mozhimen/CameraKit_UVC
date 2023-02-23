@@ -21,6 +21,6 @@
 #-renamesourcefileattribute SourceFile
 
 -dontwarn com.google.android.gms.**
--keepclasseswithmembers class com.stevez.camera.preview.CameraSurfaceView {
+-keepclasseswithmembers class com.mozhimen.camerak_uvc.preview.CameraSurfaceView {
     native <methods>;
 }

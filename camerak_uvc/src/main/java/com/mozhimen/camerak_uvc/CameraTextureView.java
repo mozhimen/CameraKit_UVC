@@ -17,15 +17,14 @@ import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
 
-import com.stevez.camera.CameraApiType;
-import com.stevez.camera.CameraManager;
-import com.stevez.camera.CallBackEvents;
-import com.stevez.camera.CameraPreviewCallback;
-import com.stevez.camera.CameraFacing;
-import com.stevez.camera.CameraSize;
-import com.stevez.camera.FacingType;
-import com.stevez.camera.IAttributes;
-import com.stevez.camerakit.R.styleable;
+import com.mozhimen.camerak.CallBackEvents;
+import com.mozhimen.camerak.CameraApiType;
+import com.mozhimen.camerak.CameraFacing;
+import com.mozhimen.camerak.CameraManager;
+import com.mozhimen.camerak.CameraPreviewCallback;
+import com.mozhimen.camerak.CameraSize;
+import com.mozhimen.camerak.FacingType;
+import com.mozhimen.camerak.IAttributes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -92,15 +91,15 @@ public class CameraTextureView extends TextureView
         this.mIsMirror = false;
         if (attrs != null) {
             this.setKeepScreenOn(true);
-            TypedArray a = context.obtainStyledAttributes(attrs, styleable.cameraStyle, 0, 0);
+            TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.cameraStyle, 0, 0);
             if (a != null) {
-                int scaleType = a.getInt(styleable.cameraStyle_scalableType, ScalableType.NONE.ordinal());
-                this.mDisplayDir = a.getInt(styleable.cameraStyle_cameraDir, DEFAULT_DISPLAY_DIR);
-                this.mPreviewWidth = a.getInt(styleable.cameraStyle_previewWidth, DEFAULT_PREVIEW_WIDTH);
-                this.mPreviewHeight = a.getInt(styleable.cameraStyle_previewHeight, DEFAULT_PREVIEW_HEIGHT);
-                this.mIsMirror = a.getBoolean(styleable.cameraStyle_isMirror, false);
-                this.camreaId = a.getInt(styleable.cameraStyle_myCameraFacing, 0);
-                this.exposureCompensation = a.getInt(styleable.cameraStyle_exposureCompensation, 0);
+                int scaleType = a.getInt(R.styleable.cameraStyle_scalableType, ScalableType.NONE.ordinal());
+                this.mDisplayDir = a.getInt(R.styleable.cameraStyle_cameraDir, DEFAULT_DISPLAY_DIR);
+                this.mPreviewWidth = a.getInt(R.styleable.cameraStyle_previewWidth, DEFAULT_PREVIEW_WIDTH);
+                this.mPreviewHeight = a.getInt(R.styleable.cameraStyle_previewHeight, DEFAULT_PREVIEW_HEIGHT);
+                this.mIsMirror = a.getBoolean(R.styleable.cameraStyle_isMirror, false);
+                this.camreaId = a.getInt(R.styleable.cameraStyle_myCameraFacing, 0);
+                this.exposureCompensation = a.getInt(R.styleable.cameraStyle_exposureCompensation, 0);
                 a.recycle();
                 this.mScalableType = ScalableType.values()[scaleType];
                 this.post(new Runnable() {

@@ -21,6 +21,6 @@ dependencyResolutionManagement {
 
 include ':app'
 include ':camerak_uvc'
-include ':camerak'
+include ':camerak_base'
 include ':camerak_uvc_base'
 rootProject.name='CameraKit_UVC'

@@ -4,9 +4,9 @@ import android.Manifest
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
-import com.blankj.utilcode.util.ToastUtils
 import com.mozhimen.camerakuvctest.R
 import com.tbruyelle.rxpermissions2.RxPermissions
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -83,11 +83,11 @@ class HomeActivity : AppCompatActivity() {
                 if (isGranted) {
                     //Toaster.show(R.string.init_success);
                 } else {
-                    ToastUtils.showShort(getString(R.string.permission_denied))
+                    Toast.makeText(this, getString(R.string.permission_denied), Toast.LENGTH_SHORT)
                     finish()
                 }
             }, { throwable: Throwable ->
-                ToastUtils.showShort(throwable.message)
+                Toast.makeText(this, throwable.message, Toast.LENGTH_SHORT)
             })
     }
 

@@ -15,7 +15,7 @@ Author : SteveZ
 -----
 
 ```xml
-<com.stevez.camerakit.BinocularCameraTextureView
+<com.mozhimen.camerak_uvc.BinocularCameraTextureView
             android:id="@+id/camera_textureview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -101,7 +101,7 @@ public class DemoActivity extends AppCompatActivity implements TextureView.Surfa
 -----
 
 ```xml
-<com.stevez.camerakit.CameraTextureView
+<com.mozhimen.camerak_uvc.CameraTextureView
             android:id="@+id/camera_textureview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -170,7 +170,7 @@ public class DemoActivity extends AppCompatActivity implements TextureView.Surfa
 -----
 
 ```xml
-<com.stevez.camerakit.ScaleTextureView
+<com.mozhimen.camerak_uvc.ScaleTextureView
             android:id="@+id/camera_textureview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

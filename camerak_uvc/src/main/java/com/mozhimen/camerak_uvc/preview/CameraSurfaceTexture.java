@@ -4,7 +4,7 @@ import android.graphics.SurfaceTexture;
 import android.opengl.Matrix;
 import androidx.annotation.Keep;
 
-import com.stevez.camera.CameraSize;
+import com.mozhimen.camerak.CameraSize;
 
 /**
  * @author SteveZ

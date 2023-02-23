@@ -3,6 +3,7 @@ package com.mozhimen.camerakuvctest;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
@@ -13,7 +14,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatSpinner;
 
-import com.blankj.utilcode.util.LogUtils;
 import com.mozhimen.camerak_uvc.CameraGLSurfaceView;
 import com.mozhimen.camerak_uvc.PermissionsListener;
 import com.mozhimen.camerak_uvc.ScalableType;
@@ -62,12 +62,12 @@ public class CameraGLSurfaceActivity extends AppCompatActivity {
         cameraView.setPermissionsListener(new PermissionsListener() {
             @Override
             public void onPermissionsSuccess() {
-                LogUtils.d(TAG, "onPermissionsSuccess");
+                Log.d(TAG, "onPermissionsSuccess");
             }
 
             @Override
             public void onPermissionsFailure() {
-                LogUtils.d(TAG, "onPermissionsFailure");
+                Log.d(TAG, "onPermissionsFailure");
                 cameraView.requestPermissions(CameraGLSurfaceActivity.this);
             }
         });

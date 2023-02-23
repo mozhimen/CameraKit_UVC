@@ -7,7 +7,7 @@
 
         <include layout="@layout/layout_title_bar" />
 
-        <com.stevez.camerakit.ScaleTextureView
+        <com.mozhimen.camerak_uvc.ScaleTextureView
             android:id="@+id/camera_textureview1"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
@@ -19,7 +19,7 @@
             stevez:previewWidth="640"
             stevez:scalableType="centerInside"/>
 
-        <com.stevez.camerakit.ScaleTextureView
+        <com.mozhimen.camerak_uvc.ScaleTextureView
             android:id="@+id/camera_textureview2"
             android:layout_width="wrap_content"
             android:layout_height="0dp"

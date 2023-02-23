@@ -12,10 +12,10 @@ import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
 
+import com.mozhimen.camerak.CameraSize;
 import com.mozhimen.camerak_uvc.preview.CameraSurfaceTexture;
 import com.mozhimen.camerak_uvc.preview.CameraSurfaceTextureListener;
 import com.mozhimen.camerak_uvc.preview.CameraSurfaceView;
-import com.stevez.camera.CameraSize;
 
 /**
  * @author: Zhu Yuliang

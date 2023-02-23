@@ -13,17 +13,16 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.blankj.utilcode.util.LogUtils;
-import com.stevez.camera.CallBackEvents;
-import com.stevez.camera.CameraApiType;
-import com.stevez.camera.CameraFacing;
-import com.stevez.camera.CameraManager;
-import com.stevez.camera.CameraPreviewCallback;
-import com.stevez.camera.CameraSize;
-import com.stevez.camera.FacingType;
-import com.stevez.camera.IAttributes;
+import com.mozhimen.camerak.CallBackEvents;
+import com.mozhimen.camerak.CameraApiType;
+import com.mozhimen.camerak.CameraFacing;
+import com.mozhimen.camerak.CameraManager;
+import com.mozhimen.camerak.CameraPreviewCallback;
+import com.mozhimen.camerak.CameraSize;
+import com.mozhimen.camerak.FacingType;
+import com.mozhimen.camerak.IAttributes;
+import com.mozhimen.camerak_uvc.ScaleTextureView;
 import com.mozhimen.camerakuvctest.R;
-import com.stevez.camerakit.ScaleTextureView;
 
 /**
  * @author: Zhu Yuliang
@@ -115,7 +114,7 @@ public class TwoCameraScaleTextureViewActivity extends AppCompatActivity {
                 (new CallBackEvents() {
                     @Override
                     public void onCameraOpen(IAttributes cameraAttributes) {
-                        LogUtils.e(TAG, "onCameraOpen");
+                        Log.e(TAG, "onCameraOpen");
                         mInstance1.setPhotoSize(new CameraSize(ConstantsConfig.getInstance().getWidth(), ConstantsConfig.getInstance().getHeight()));
                         mInstance1.setPreviewSize(new CameraSize(ConstantsConfig.getInstance().getWidth(), ConstantsConfig.getInstance().getHeight()));
                         mInstance1.setPreviewOrientation(ConstantsConfig.getInstance().getFaceOri().getValue() * 90);
@@ -123,7 +122,7 @@ public class TwoCameraScaleTextureViewActivity extends AppCompatActivity {
                         mInstance1.addPreviewCallbackWithBuffer(new CameraPreviewCallback() {
                             @Override
                             public void onCallBackPreview(byte[] data) {
-                                LogUtils.e(TAG, "onCallBackPreview");
+                                Log.e(TAG, "onCallBackPreview");
                             }
                         });
                         mInstance1.startPreview(surface);
@@ -131,27 +130,27 @@ public class TwoCameraScaleTextureViewActivity extends AppCompatActivity {
 
                     @Override
                     public void onCameraClose() {
-                        LogUtils.e(TAG, "onCameraClose");
+                        Log.e(TAG, "onCameraClose");
                     }
 
                     @Override
                     public void onCameraError(String errorMsg) {
-                        LogUtils.e(TAG, "onCameraError");
+                        Log.e(TAG, "onCameraError");
                     }
 
                     @Override
                     public void onPreviewStarted() {
-                        LogUtils.e(TAG, "onPreviewStarted");
+                        Log.e(TAG, "onPreviewStarted");
                     }
 
                     @Override
                     public void onPreviewStopped() {
-                        LogUtils.e(TAG, "onPreviewStopped");
+                        Log.e(TAG, "onPreviewStopped");
                     }
 
                     @Override
                     public void onPreviewError(String errorMsg) {
-                        LogUtils.e(TAG, "onPreviewError");
+                        Log.e(TAG, "onPreviewError");
                     }
                 }));
         mInstance1.openCamera();
@@ -167,7 +166,7 @@ public class TwoCameraScaleTextureViewActivity extends AppCompatActivity {
                 (new CallBackEvents() {
                     @Override
                     public void onCameraOpen(IAttributes cameraAttributes) {
-                        LogUtils.e(TAG, "onCameraOpen");
+                        Log.e(TAG, "onCameraOpen");
                         mInstance2.setPhotoSize(new CameraSize(ConstantsConfig.getInstance().getWidth(), ConstantsConfig.getInstance().getHeight()));
                         mInstance2.setPreviewSize(new CameraSize(ConstantsConfig.getInstance().getWidth(), ConstantsConfig.getInstance().getHeight()));
                         mInstance2.setPreviewOrientation(ConstantsConfig.getInstance().getFaceOri().getValue() * 90);
@@ -175,7 +174,7 @@ public class TwoCameraScaleTextureViewActivity extends AppCompatActivity {
                         mInstance2.addPreviewCallbackWithBuffer(new CameraPreviewCallback() {
                             @Override
                             public void onCallBackPreview(byte[] data) {
-                                LogUtils.e(TAG, "onCallBackPreview");
+                                Log.e(TAG, "onCallBackPreview");
                             }
                         });
                         mInstance2.startPreview(surface);
@@ -183,27 +182,27 @@ public class TwoCameraScaleTextureViewActivity extends AppCompatActivity {
 
                     @Override
                     public void onCameraClose() {
-                        LogUtils.e(TAG, "onCameraClose");
+                        Log.e(TAG, "onCameraClose");
                     }
 
                     @Override
                     public void onCameraError(String errorMsg) {
-                        LogUtils.e(TAG, "onCameraError");
+                        Log.e(TAG, "onCameraError");
                     }
 
                     @Override
                     public void onPreviewStarted() {
-                        LogUtils.e(TAG, "onPreviewStarted");
+                        Log.e(TAG, "onPreviewStarted");
                     }
 
                     @Override
                     public void onPreviewStopped() {
-                        LogUtils.e(TAG, "onPreviewStopped");
+                        Log.e(TAG, "onPreviewStopped");
                     }
 
                     @Override
                     public void onPreviewError(String errorMsg) {
-                        LogUtils.e(TAG, "onPreviewError");
+                        Log.e(TAG, "onPreviewError");
                     }
                 }));
         mInstance2.openCamera();

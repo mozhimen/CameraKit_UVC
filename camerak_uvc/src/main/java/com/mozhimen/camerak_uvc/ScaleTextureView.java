@@ -10,8 +10,6 @@ import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
 
-import com.stevez.camerakit.R.styleable;
-
 /**
  * @author: SteveZ
  * @created on: 2020/5/25 5:59 PM.
@@ -45,13 +43,13 @@ public class ScaleTextureView extends TextureView implements ICameraView, Lifecy
         this.mIsMirror = false;
         if (attrs != null) {
             this.setKeepScreenOn(true);
-            TypedArray a = context.obtainStyledAttributes(attrs, styleable.cameraStyle, 0, 0);
+            TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.cameraStyle, 0, 0);
             if (a != null) {
-                int scaleType = a.getInt(styleable.cameraStyle_scalableType, ScalableType.NONE.ordinal());
-                this.mDisplayDir = a.getInt(styleable.cameraStyle_cameraDir, DEFAULT_DISPLAY_DIR);
-                this.mPreviewWidth = a.getInt(styleable.cameraStyle_previewWidth, DEFAULT_PREVIEW_WIDTH);
-                this.mPreviewHeight = a.getInt(styleable.cameraStyle_previewHeight, DEFAULT_PREVIEW_HEIGHT);
-                this.mIsMirror = a.getBoolean(styleable.cameraStyle_isMirror, false);
+                int scaleType = a.getInt(R.styleable.cameraStyle_scalableType, ScalableType.NONE.ordinal());
+                this.mDisplayDir = a.getInt(R.styleable.cameraStyle_cameraDir, DEFAULT_DISPLAY_DIR);
+                this.mPreviewWidth = a.getInt(R.styleable.cameraStyle_previewWidth, DEFAULT_PREVIEW_WIDTH);
+                this.mPreviewHeight = a.getInt(R.styleable.cameraStyle_previewHeight, DEFAULT_PREVIEW_HEIGHT);
+                this.mIsMirror = a.getBoolean(R.styleable.cameraStyle_isMirror, false);
                 a.recycle();
                 this.mScalableType = ScalableType.values()[scaleType];
                 this.post(new Runnable() {

@@ -7,7 +7,7 @@
 
         <include layout="@layout/layout_scale_title_bar" />
 
-        <com.stevez.camerakit.BinocularCameraTextureView
+        <com.mozhimen.camerak_uvc.BinocularCameraTextureView
             android:id="@+id/camera_textureview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

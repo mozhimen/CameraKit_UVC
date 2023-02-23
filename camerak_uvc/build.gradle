@@ -21,6 +21,7 @@ android {
             path 'src/main/cpp/CMakeLists.txt'
         }
     }
+    ndkVersion rootProject.android.ndkVersion
 
     buildTypes {
         debug {
@@ -55,7 +56,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    api project(':camerak')
+    api project(':camerak_base')
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

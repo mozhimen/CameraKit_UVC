@@ -13,8 +13,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatEditText;
 
+import com.mozhimen.camerak_uvc.Direction;
 import com.mozhimen.camerakuvctest.R;
-import com.stevez.camerakit.Direction;
 
 /**
  * @date: Create in 3:36 PM 2020/7/8

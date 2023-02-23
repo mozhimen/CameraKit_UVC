@@ -16,17 +16,17 @@ import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
 
+import com.mozhimen.camerak.CallBackEvents;
+import com.mozhimen.camerak.CameraApiType;
+import com.mozhimen.camerak.CameraFacing;
+import com.mozhimen.camerak.CameraManager;
+import com.mozhimen.camerak.CameraPreviewCallback;
+import com.mozhimen.camerak.CameraSize;
+import com.mozhimen.camerak.FacingType;
+import com.mozhimen.camerak.IAttributes;
 import com.mozhimen.camerak_uvc.preview.CameraSurfaceTexture;
 import com.mozhimen.camerak_uvc.preview.CameraSurfaceTextureListener;
 import com.mozhimen.camerak_uvc.preview.CameraSurfaceView;
-import com.stevez.camera.CallBackEvents;
-import com.stevez.camera.CameraApiType;
-import com.stevez.camera.CameraManager;
-import com.stevez.camera.CameraPreviewCallback;
-import com.stevez.camera.CameraFacing;
-import com.stevez.camera.CameraSize;
-import com.stevez.camera.FacingType;
-import com.stevez.camera.IAttributes;
 import com.mozhimen.camerak_uvc.R.styleable;
 
 import java.util.ArrayList;

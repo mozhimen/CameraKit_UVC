@@ -1,0 +1,61 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:1:1-21:12
+INJECTED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:1:1-21:12
+INJECTED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:1:1-21:12
+	package
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:2:5-35
+		INJECTED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml
+		INJECTED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.CAMERA
+ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:4:5-65
+	android:name
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:4:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:5:5-71
+	android:name
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:5:22-68
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:6:22-78
+uses-feature#android.hardware.camera
+ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:8:5-10:35
+	android:required
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:10:9-32
+	android:name
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:9:9-47
+uses-feature#android.hardware.camera.front
+ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:11:5-13:35
+	android:required
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:13:9-32
+	android:name
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:12:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:14:5-16:35
+	android:required
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:16:9-32
+	android:name
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:15:9-57
+uses-feature#android.hardware.microphone
+ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:17:5-19:35
+	android:required
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:19:9-32
+	android:name
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml:18:9-51
+uses-sdk
+INJECTED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml
+INJECTED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml
+INJECTED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml
+INJECTED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml
+		INJECTED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml
+		ADDED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml
+		INJECTED from F:\GitHub\CameraKit_UVC\camerak\src\main\AndroidManifest.xml
